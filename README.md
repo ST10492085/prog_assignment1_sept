@@ -31,4 +31,12 @@ RaceDay addresses this by providing a digital platform for:
 - [ ] Section C: SQL script with schema and seed data
 - [ ] Export ERD to PNG/PDF in `/docs`
 - [ ] Ensure SQL matches ERD exactly
+## Submission Artifacts (Part 1)
+
+- `/docs/raceday-erd.dbml`
+- `/docs/raceday-erd.png` or `/docs/raceday-erd.pdf`
+- `/docs/api-endpoint-plan.md`
+- `/docs/raceday_schema.sql`
+- `/docs/erd-notes.md`
+
 
