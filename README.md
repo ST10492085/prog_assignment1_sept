@@ -8,3 +8,18 @@ RaceDay is a full-stack event management platform for South African running, wal
 - `/docs` - Part 1 planning deliverables (ERD, API plan, SQL script)
 - `/src` - Reserved for Part 2/Part 3 implementation
 - `README.md` - Project overview and submission notes
+## Background
+
+South Africa has a rich road events culture, but many events are still managed using manual processes.
+RaceDay addresses this by providing a digital platform for:
+
+- Event organiser management of events and categories
+- Participant event discovery and enrolment
+- Recording and viewing event results
+- Structured API-first delivery across POE parts
+
+## POE Delivery Plan
+
+- **Part 1:** ERD, API endpoint plan, SQL database script
+- **Part 2:** RESTful API in C# with tests and CI/CD
+- **Part 3:** MVC app consuming API, Azure Blob integration, Docker
