@@ -43,3 +43,26 @@ Table organizer_profiles {
   created_at datetime [not null]
   updated_at datetime [not null]
 }
+# ERD Notes (Section A)
+
+## Core Entities
+- users
+- participant_profiles
+- organizer_profiles
+- events
+- categories
+- enrollments
+- results
+
+## Relationship Summary
+- One user can have one participant profile.
+- One user can have one organizer profile.
+- One organizer can create many events.
+- One event can have many categories.
+- Participants and categories are many-to-many via enrollments.
+- Each enrollment can have one result.
+
+## Constraint Decisions
+- Email and enrollment unique codes are unique.
+- Enrollment prevents duplicates using (participant_id, category_id).
+- Result is unique per enrollment.
