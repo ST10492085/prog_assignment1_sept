@@ -1,0 +1,11 @@
+Table users {
+  user_id int [pk, increment]
+  first_name varchar(50) [not null]
+  last_name varchar(50) [not null]
+  email varchar(120) [not null, unique]
+  password_hash varchar(255) [not null]
+  phone varchar(20)
+  role varchar(20) [not null]
+  created_at datetime [not null]
+  updated_at datetime [not null]
+}
