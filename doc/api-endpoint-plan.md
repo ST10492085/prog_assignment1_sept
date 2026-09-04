@@ -7,3 +7,5 @@ POST /api/auth/register
 POST /api/auth/login
 GET /api/users/me
 PUT /api/users/me
+POST/GET/PUT participant profile
+POST/GET/PUT organizer profile
