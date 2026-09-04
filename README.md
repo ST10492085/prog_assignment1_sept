@@ -23,3 +23,12 @@ RaceDay addresses this by providing a digital platform for:
 - **Part 1:** ERD, API endpoint plan, SQL database script
 - **Part 2:** RESTful API in C# with tests and CI/CD
 - **Part 3:** MVC app consuming API, Azure Blob integration, Docker
+
+## Part 1 Checklist
+
+- [ ] Section A: ERD with entities, PK/FK, cardinality
+- [ ] Section B: API endpoint plan table
+- [ ] Section C: SQL script with schema and seed data
+- [ ] Export ERD to PNG/PDF in `/docs`
+- [ ] Ensure SQL matches ERD exactly
+
