@@ -14,3 +14,8 @@ GET /api/events
 GET /api/events/{eventId}
 PUT /api/events/{eventId}
 DELETE /api/events/{eventId}
+POST /api/events/{eventId}/categories
+GET /api/events/{eventId}/categories
+GET /api/categories/{categoryId}
+PUT /api/categories/{categoryId}
+DELETE /api/categories/{categoryId}
