@@ -19,3 +19,7 @@ GET /api/events/{eventId}/categories
 GET /api/categories/{categoryId}
 PUT /api/categories/{categoryId}
 DELETE /api/categories/{categoryId}
+POST /api/categories/{categoryId}/enrollments
+GET /api/enrollments/me
+GET /api/enrollments/{enrollmentId}
+DELETE /api/enrollments/{enrollmentId}
