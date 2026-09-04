@@ -9,3 +9,37 @@ Table users {
   created_at datetime [not null]
   updated_at datetime [not null]
 }
+Table users {
+  user_id int [pk, increment]
+  first_name varchar(50) [not null]
+  last_name varchar(50) [not null]
+  email varchar(120) [not null, unique]
+  password_hash varchar(255) [not null]
+  phone varchar(20)
+  role varchar(20) [not null, note: 'Organizer | Participant | Admin']
+  created_at datetime [not null]
+  updated_at datetime [not null]
+}
+
+Table participant_profiles {
+  participant_id int [pk, increment]
+  user_id int [not null, unique, ref: > users.user_id]
+  date_of_birth date
+  gender varchar(20)
+  emergency_contact_name varchar(100)
+  emergency_contact_phone varchar(20)
+  club_name varchar(100)
+  created_at datetime [not null]
+  updated_at datetime [not null]
+}
+
+Table organizer_profiles {
+  organizer_id int [pk, increment]
+  user_id int [not null, unique, ref: > users.user_id]
+  organization_name varchar(120) [not null]
+  organization_type varchar(50)
+  bio text
+  verified bit [not null, default: 0]
+  created_at datetime [not null]
+  updated_at datetime [not null]
+}
